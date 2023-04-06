@@ -55,7 +55,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 model = model.to(device)
 
 ##### Load the model parameter, which is given
-model.load_state_dict(torch.load('trained_model/UNet_trained_model.pth'))
+model.load_state_dict(torch.load('/Users/qtle/Desktop/Workspace/COSE474/Project3/trained_model/UNet_trained_model.pth'))
 
 # Train
 import os
